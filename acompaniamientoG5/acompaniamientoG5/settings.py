@@ -79,7 +79,11 @@ WSGI_APPLICATION = 'acompaniamientoG5.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': "bd_s1",
+        'USER': "s1",
+        'PASSWORD': "1234",
+        'HOST': "localhost",
+        'PORT': "5432",
     }
 }
 
