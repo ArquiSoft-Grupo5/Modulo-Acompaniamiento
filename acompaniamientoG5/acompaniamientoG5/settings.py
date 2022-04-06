@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'estudiantes',
     'semestres',
     'usuarios',
+    'preAnalisis',
 ]
 
 MIDDLEWARE = [
