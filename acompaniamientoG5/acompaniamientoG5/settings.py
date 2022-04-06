@@ -80,9 +80,9 @@ WSGI_APPLICATION = 'acompaniamientoG5.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': "bd_s1",
-        'USER': "s1",
-        'PASSWORD': "1234",
+        'NAME': "db_G5",
+        'USER': "Grupo5",
+        'PASSWORD': "1",
         'HOST': "172.24.41.152",
         'PORT': "5432",
     }
