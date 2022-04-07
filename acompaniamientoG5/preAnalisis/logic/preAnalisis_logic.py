@@ -1,8 +1,8 @@
 from ..models import PreAnalisis
 
 def get_preAnalisiss():
-    preAnalisis = PreAnalisis.objects.all()
-    return preAnalisis
+    preAnalisiss = PreAnalisis.objects.all()
+    return preAnalisiss
 
 def get_preAnalisis(var_pk):
     preAnalisis = PreAnalisis.objects.get(pk=var_pk)
