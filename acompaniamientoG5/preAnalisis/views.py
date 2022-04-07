@@ -10,7 +10,6 @@ from django.views.decorators.csrf import csrf_exempt
 def preAnalisiss_view(request):
     if request.method == 'GET':
         id = request.GET.get("id", None)
-        time.sleep(1)
         if id:
             preAnalisis_dto = pal.get_preAnalisis(id)
             preAnalisis = serializers.serialize('json', [preAnalisis_dto, ])
@@ -29,7 +28,6 @@ def preAnalisiss_view(request):
 @csrf_exempt
 def preAnalisis_view(request, pk):
     if request.method == 'GET':
-        time.sleep(1)
         preAnalisis_dto = pal.get_preAnalisis(pk)
         preAnalisis = serializers.serialize('json', [preAnalisis_dto, ])
         return HttpResponse(preAnalisis, 'application/json')
